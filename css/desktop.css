@@ -1,0 +1,68 @@
+@media screen and (min-width: 1158px) {
+
+  .container {
+   max-width: 1158px;
+   padding: 0 15px;
+   margin: 0 auto;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+/* #region header */
+/* #endregion header */
+   /* #region hero */
+   .page-title {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+
+   }
+   .main-title {
+    margin-bottom: 48px; 
+   }
+ 
+ /* #endregion hero */  
+  /* #region work ethics */
+  .list-ethics {
+    flex-wrap: nowrap;
+  }
+  .item-ethics {
+   width: calc((100% - 72px) / 4);
+  } 
+  .subt-ethics {
+    font-weight: 500;
+    font-size: 20px;
+  }  
+  .subt-ethics-descr {
+    font-weight: 400;
+  }
+  .ethics-icon-wrap {
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  /* #endregion work ethics */
+  /* #region team */
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  /* #endregion team */
+
+/* #region portfolio */
+.portf-item {
+   width: calc((100% - 48) / 3);
+}
+.team-list {
+   row-gap: 48px;
+}
+/* #endregion portfolio */
+
+/* #region footer*/
+
+/* #endregion footer*/
