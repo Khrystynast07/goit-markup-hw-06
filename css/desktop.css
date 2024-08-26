@@ -5,7 +5,6 @@
     padding: 0 15px;
     margin: 0 auto;
   }
-
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -16,48 +15,49 @@
     flex-direction: row;
     gap: 40px;
   }
-
   .contacts-link {
     font-size: 16px;
     line-height: 1.5;
   }
-
   .header-logo {
     margin-right: 76px;
   }
-
   /* #endregion header */
+
   /* #region hero */
   .page-title {
     padding: 188px 0;
     max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg-image/desk-bc.jpg");
 
   }
-
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+	screen and (min-resolution: 192dpi) and (min-width: 1158px),
+	screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+    .page-title {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/bg-image/desk-bc2x.jpg);
+	}
+}
   .main-title {
     margin-bottom: 48px;
   }
-
   /* #endregion hero */
+
   /* #region work ethics */
   .list-ethics {
     flex-wrap: nowrap;
   }
-
   .item-ethics {
     width: calc((100% - 72px) / 4);
   }
-
   .subt-ethics {
     font-weight: 500;
     font-size: 20px;
   }
-
   .subt-ethics-descr {
     font-weight: 400;
   }
-
   .ethics-icon-wrap {
     height: 112px;
     border: 1px solid #8e8f99;
@@ -68,24 +68,21 @@
     align-items: center;
     margin-bottom: 8px;
   }
-
   /* #endregion work ethics */
+
   /* #region team */
   .team-list {
     flex-wrap: nowrap;
   }
-
   /* #endregion team */
 
   /* #region portfolio */
   .portf-item {
     width: calc((100% - 48px) / 3);
   }
-
   .team-list {
     gap: 48px 24px;
   }
-
   /* #endregion portfolio */
 
   /* #region footer*/
@@ -98,9 +95,8 @@
   .media-container {
     margin-right: auto;
   }
-
   .logo-container {
     margin-right: 120px;
   }
-
   /* #endregion footer*/
+}

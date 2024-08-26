@@ -1,12 +1,17 @@
 @media screen and (min-width: 768px) {
+  
 .container {
   max-width: 768px;
 } 
+
 /* #region header */
-.header-logo{
+.mobile-menu {
+  display: none;
+}
+.header-logo {
   margin-right: 120px;
 }
-.menu-open-btn{
+.menu-open-btn {
   display: none;
 }
 .nav-list {
@@ -64,20 +69,29 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion header */
+
  /* #region hero */
  .page-title {
     padding: 112px 0;
     max-width: 768px;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/device-images/tablet-bg.jpg");
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg-image/tablet-bg.jpg");
  }
+ @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .page-title {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/bg-image/tablet-bg2x.jpg);
+	}
+}
  .main-title{
     margin-bottom: 36px;
     max-width: 496px;
     font-size: 56px;
-    line-height: 1.07;
-    
+    line-height: 1.07;  
  }
- /* #endregion hero */   
+ /* #endregion hero */ 
+
 /* #region work ethics */
 .list-ethics {
   gap: 72px 24px;
@@ -102,11 +116,10 @@
   width: calc((100% - 24px) / 2); 
 }
 .portf-list {
-gap: 72px 24px;
-  }
-
-/* #endregion portfolio */
+  gap: 72px 24px;
 }
+/* #endregion portfolio */
+
 /* #region footer*/
 .page-footer-container {
   flex-direction: row;
@@ -123,3 +136,11 @@ gap: 72px 24px;
   flex-direction: row;
 }
 /* #endregion footer*/
+
+/* #region backdrop modal */
+.modal {
+  width: 408px;
+  padding: 72px 24px 24px;
+}
+/* #endregion backdrop modal */
+}
