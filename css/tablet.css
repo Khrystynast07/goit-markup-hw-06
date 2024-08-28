@@ -126,7 +126,7 @@
   flex-wrap: wrap;
   gap: 72px 24px;
   align-items: baseline;
-  padding-left: 108px;
+  width: 584px;
 
 }
 .footer-logo, .media-title, .user-subscribe {
