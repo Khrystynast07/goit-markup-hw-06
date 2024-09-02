@@ -131,6 +131,7 @@
 }
 .footer-logo, .media-title, .user-subscribe {
   text-align: left;
+  
 }
 .footer-form {
   flex-direction: row;
