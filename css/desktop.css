@@ -91,6 +91,8 @@
   }
   .page-footer-container {
     gap: 0;
+    flex-wrap: nowrap;
+    width: auto;
   }
   .media-container {
     margin-right: auto;
